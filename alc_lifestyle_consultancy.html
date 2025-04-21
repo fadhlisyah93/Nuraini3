@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALC | Aini Lifestyle Consultancy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0A1F44;
+      --accent-color: #D4AF37;
+      --hover-color: #B88C2B;
+      --light-color: #FFFFFF;
+      --gray-color: #F9FAFB;
+      --text-color: #1F2937;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--light-color);
+      padding: 20px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    .hero {
+      padding: 160px 40px 100px;
+      text-align: center;
+      background-color: var(--gray-color);
+    }
+
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #4B5563;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--hover-color);
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ALC | Aini Lifestyle Consultancy</div>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#products">Produk</a>
+      <a href="#consult">Konsultasi</a>
+      <a href="#testimonials">Testimoni</a>
+      <a href="#contact">Hubungi</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Consult. Choose. Transform.</h1>
+    <p>Bersama ALC – Gaya Hidup Anda, Keutamaan Kami.</p>
+    <a href="https://wa.me/60123456789" class="btn-primary">Mulakan Konsultasi</a>
+  </div>
+
+  <section id="about">
+    <h2>Tentang ALC</h2>
+    <div class="content">
+      <p>
+        Saya Nur Aini, Konsultan Gaya Hidup Sihat yang membantu anda memilih produk terbaik mengikut keperluan, gaya hidup dan bajet anda. Saya percaya dalam memberikan bimbingan yang jujur dan berintegriti.
+      </p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Produk Pilihan</h2>
+    <div class="products">
+      <div class="product-card">
+        <h3>Nutrilite Vitamin C Plus</h3>
+        <p>Meningkatkan sistem imun dan kesihatan harian.</p>
+      </div>
+      <div class="product-card">
+        <h3>Artistry Hydra-V</h3>
+        <p>Penjagaan kulit yang memberi kelembapan dan kesegaran.</p>
+      </div>
+      <div class="product-card">
+        <h3>SA8 Laundry Detergent</h3>
+        <p>Pencuci pakaian berkualiti dan mesra alam.</p>
+      </div>
+      <div class="product-card">
+        <h3>G&H Body Care</h3>
+        <p>Rangkaian penjagaan badan yang menyegarkan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consult">
+    <h2>Konsultasi Peribadi</h2>
+    <div class="content">
+      <p>
+        Tak pasti mana satu produk sesuai? Saya sedia bantu secara peribadi untuk memahami keperluan anda dan mencadangkan solusi terbaik — tanpa paksaan.
+      </p>
+      <br>
+      <a href="https://wa.me/60123456789" class="btn-primary">Konsultasi Sekarang</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ALC | Aini Lifestyle Consultancy. Semua hak cipta terpelihara.</p>
+    <p><small>Laman ini bukan laman rasmi Amway. Ia adalah servis bebas oleh Aini, Konsultan Gaya Hidup.</small></p>
+  </footer>
+</body>
+</html>
