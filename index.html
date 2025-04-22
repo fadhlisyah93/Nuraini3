@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALC | Aini Lifestyle Consultancy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+    .product-section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .product-section h2 {
+      font-size: 24px;
+      color: #bfa046;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .product-section p {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .slider-container {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .slider-container img {
+      width: 100%;
+      display: none;
+      transition: opacity 1s ease-in-out;
+    }
+    .slider-container img.active {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section class="product-section">
+    <h2>Philips All-In-One 8500 Series</h2>
+    <p><strong>Solusi menggosok pakaian premium dan lengkap.</strong> Gabungan stim kuat, rekaan ergonomik, dan teknologi pintar. Sesuai untuk semua jenis fabrik, menjimatkan masa dan kekal rapi dengan gaya hidup moden anda.</p>
+    <div class="slider-container">
+      <img class="slider-img active" src="Product_1000Wx1000H_MUL_322127_1.jpg" alt="Philips Full View"/>
+      <img class="slider-img" src="Product_1000Wx1000H_MUL_322127_2.jpg" alt="Philips In Use"/>
+      <img class="slider-img" src="Product_1000Wx1000H_MUL_322127_3.jpg" alt="Philips Adjustable"/>
+    </div>
+  </section>
+
+  <script>
+    const images = document.querySelectorAll('.slider-img');
+    let index = 0;
+
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 3000);
+  </script>
+</body>
+</html>
